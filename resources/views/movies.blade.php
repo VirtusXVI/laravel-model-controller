@@ -9,10 +9,11 @@
 <body>
     @foreach ($movies as $movie)
         <div>
-            <div>Titolo: {{ $movies->title }}</div>
-            <div>Original Title: {{ $movies->original_title }}</div>
-            <div>Date: {{ $movies->date }}</div>
-            <div>Vote: {{ $movies->vote }}</div>
+            <div>Titolo: {{ $movie->title }}</div>
+            <div>Original Title: {{ $movie->original_title }}</div>
+            <div>Date: {{ $movie->date }}</div>
+            <div>Vote: {{ $movie->vote }}</div>
+            <br>
         </div>
     @endforeach
 </body>
